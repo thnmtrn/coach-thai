@@ -6,6 +6,7 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import dribbbleIcon from '../public/dribbble-logo.png'
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -15,8 +16,8 @@ const LayoutWrapper = ({ children }) => {
           <div>
             <Link href="/" aria-label="Tailwind CSS Blog">
               <div className="flex items-center justify-between">
-                <div className="mr-3">
-                  <Logo />
+                <div className="mr-3 w-6 h-6 bg-code-white fill-current">
+                <img src={dribbbleIcon} alt=""/>
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-2xl font-semibold sm:block">
